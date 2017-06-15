@@ -1,39 +1,13 @@
-/* functions on arrays - according to instruction
+// Strings
 
-var femaleNames = ['Ania', 'Kasia', 'Ola', 'Jola'],
-    maleNames = ['Pioterk', 'Kuba', 'Marek', 'Arek'];
-    
+var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.',
+    dinosaur = 'triceratops';
 
-var allNames = femaleNames.concat(maleNames);
-console.log(allNames);
+var dinosaurUpperCase = dinosaur.toUpperCase();
 
-var newName = 'Marian';
+var dinosaurReplacement = text.replace('Velociraptor', dinosaurUpperCase);
 
-if (allNames.indexOf(newName) === -1) {
-    var x = allNames.push(newName);
-};
+//console.log(dinosaurReplacement.length/2);
 
-console.log(allNames); 
-*/
+console.log(dinosaurReplacement.slice(0, 72));   
 
-// functions on arrays  
-
-var femaleNames = ['Ania', 'Kasia', 'Ola', 'Jola'],
-    maleNames = ['Pioterk', 'Kuba', 'Marek', 'Arek'];
- 
-var allNames = femaleNames.concat(maleNames);
-console.log(allNames);
-
-function getBiggerArray(newName) {
-    if (allNames.indexOf(newName) != -1) {
-        console.log('Repeated name');
-    } else if (allNames.indexOf(newName) === -1) {
-        var x = allNames.push(newName);
-    }
-};
-
-var newName1 = getBiggerArray('Ania'),
-    newName2 = getBiggerArray('Jacek'),
-    newName3 = getBiggerArray('Tola');
-
-console.log(allNames); 
