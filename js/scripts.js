@@ -1,48 +1,22 @@
-// Christmas Tree - half a tree
+// DOM
 
-function drawTree(h) {    
-    for (var i = 0 ; i < h ; i++) {
-        var star = '';
-        for (var j = 0 ; j <= i ; j++) {
-            star = star + '*';
-        }
-        console.log(star);
-    }
-};
+var button = document.getElementsByClassName('button');
+var elemsAmount = button.length;
 
-drawTree(5);
+for (var b = 0 ; b < elemsAmount ; b++) {
+	alert(button[b].innerText);
+}
 
-/* the whole tree
+// Events
 
-function drawTree(h) {    
-    for ( var i = 0 ; i < h ; i++) {
-        var star = '';
-        for (j = 0 ; j < h - i ; j++) {
-            star = star + ' ';	
-        }
-        for (var j = 0 ; j <= i * 2 ; j++) {
-            star = star + '*';   
-        }
-        console.log(star);	
-    }
-};
+var list = document.getElementById('list'),
+    add = document.getElementById('addElem');
 
-drawTree(5);
+add.addEventListener('click', function() {
+	var newListItem = document.createElement('li'),
+	    nextListItem = document.getElementsByTagName('li');
+    
+    newListItem.innerHTML = 'item ' + nextListItem.length;
+    list.appendChild(newListItem);    
+});
 
-the new whole tree
-
-function drawTree(h) {    
-    for ( var i = 0 ; i < h ; i++) {
-        var star = '';
-        for (j = 0 ; j <= h + i ; j++) {
-            if (j < h - i) {
-                star += ' ';
-            } else { star += '*';
-            }   
-        }        
-        console.log(star);  
-    }
-};
-
-drawTree(10);
-*/
