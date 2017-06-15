@@ -1,0 +1,29 @@
+{
+  "name": "kodilla-modul-9",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annmarin/modul-9.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "Anna Bródka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annmarin/modul-9/issues"
+  },
+  "homepage": "https://github.com/annmarin/modul-9#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
