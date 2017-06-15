@@ -10,4 +10,3 @@ var dinosaurReplacement = text.replace('Velociraptor', dinosaurUpperCase);
 //console.log(dinosaurReplacement.length/2);
 
 console.log(dinosaurReplacement.slice(0, 72));   
-
