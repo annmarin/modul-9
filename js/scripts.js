@@ -1,20 +1,39 @@
-// calculating area of isosceles triangle using js function
+/* functions on arrays - according to instruction
 
-function getTriangleArea(a, h) {
-	var triangleArea = a*h/2
-    if ((a > 0) && (h > 0)) {
-        return triangleArea;
-    } else if ((a <= 0) || (h <= 0)) {
-    	console.log('Incorrect data!');
-	}
-}
+var femaleNames = ['Ania', 'Kasia', 'Ola', 'Jola'],
+    maleNames = ['Pioterk', 'Kuba', 'Marek', 'Arek'];
+    
 
-var triangle1Area = getTriangleArea(10, 6),
-    triangle2Area = getTriangleArea(7, -2),
-    triangle3Area = getTriangleArea(3, 0);
+var allNames = femaleNames.concat(maleNames);
+console.log(allNames);
 
-console.log(triangle1Area);
-console.log(triangle2Area);
-console.log(triangle3Area);
+var newName = 'Marian';
 
+if (allNames.indexOf(newName) === -1) {
+    var x = allNames.push(newName);
+};
 
+console.log(allNames); 
+*/
+
+// functions on arrays  
+
+var femaleNames = ['Ania', 'Kasia', 'Ola', 'Jola'],
+    maleNames = ['Pioterk', 'Kuba', 'Marek', 'Arek'];
+ 
+var allNames = femaleNames.concat(maleNames);
+console.log(allNames);
+
+function getBiggerArray(newName) {
+    if (allNames.indexOf(newName) != -1) {
+        console.log('Repeated name');
+    } else if (allNames.indexOf(newName) === -1) {
+        var x = allNames.push(newName);
+    }
+};
+
+var newName1 = getBiggerArray('Ania'),
+    newName2 = getBiggerArray('Jacek'),
+    newName3 = getBiggerArray('Tola');
+
+console.log(allNames); 
