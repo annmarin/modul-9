@@ -107,7 +107,7 @@ function checkRoundWinner(playerPick, computerPick) {			//set a round
     }
     setGamePoints();
 
-    function gameIsOver() {
+    function gameIsOver() {                             //ended
         if (player.score == 10) {
             alert('You are the Winner!');
             gameState = 'ended';
