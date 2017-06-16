@@ -12,7 +12,7 @@ pickRock.addEventListener('click', function() {playerPick('rock')});
 pickPaper.addEventListener('click', function() {playerPick('paper')});
 pickScissors.addEventListener('click', function() {playerPick('scissors')});
 
-var gameState = 'notStarted', //the game's storage			//started //ended
+var gameState = 'notStarted', 	     //started //ended
     player = {
         name: '',
         score: 0
